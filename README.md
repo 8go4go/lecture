@@ -1,5 +1,5 @@
 Spring-Framework 연동
-1. pom.xml을 위한 depency 추가
+1. pom.xml을 위한 depency 추가 
     <springframework.version>5.3.20</springframework.version>
     <org.slf4j-version>1.7.30</org.slf4j-version>
      

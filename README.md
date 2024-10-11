@@ -60,13 +60,11 @@ Spring-Framework 연동
         <param-name>contextConfigLocation</param-name>
         <param-value>/WEB-INF/spring/root-context.xml</param-value>
     </context-param>
-
-    <!-- Creates the Spring Container shared by all Servlets and Filters -->
+    
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
-    <!-- Processes application requests -->
     <servlet>
         <servlet-name>appServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -82,12 +80,9 @@ Spring-Framework 연동
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-3. servlet-context.xml와 root-context.xml 설정
-   servlet-context 설정
-   
+3. servlet-context.xml와 root-context.xml 설정   
     <resources mapping="/resources/**" location="/resources/" />
-
-    <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+    
     <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <beans:property name="prefix" value="/WEB-INF/views/" />
         <beans:property name="suffix" value=".jsp" />

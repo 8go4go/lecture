@@ -55,7 +55,7 @@ Spring-Framework 연동
             <scope>test</scope>
         </dependency>
 
-   2. web.xml에 ContextListener 와 DistpatcherServlet Declare
+2. web.xml에 ContextListener 와 DistpatcherServlet Declare
       <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>/WEB-INF/spring/root-context.xml</param-value>

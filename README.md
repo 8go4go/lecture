@@ -1,59 +1,59 @@
 Spring-Framework 연동
 1. pom.xml을 위한 depency 추가
-   <springframework.version>5.3.20</springframework.version>
-   <org.slf4j-version>1.7.30</org.slf4j-version>
+  <springframework.version>5.3.20</springframework.version>
+  <org.slf4j-version>1.7.30</org.slf4j-version>
    
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${org.slf4j-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-            <version>${org.slf4j-version}</version>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>${org.slf4j-version}</version>
-            <scope>runtime</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
+  <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${org.slf4j-version}</version>
+  </dependency>
+  <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+      <version>${org.slf4j-version}</version>
+      <scope>runtime</scope>
+  </dependency>
+  <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>${org.slf4j-version}</version>
+      <scope>runtime</scope>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+  <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+  </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${springframework.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${springframework.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${springframework.version}</version>
-        </dependency>
+  <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+  <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${springframework.version}</version>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+  <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+  <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${springframework.version}</version>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+  <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${springframework.version}</version>
+  </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${springframework.version}</version>
-            <scope>test</scope>
-        </dependency>
+  <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+  <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${springframework.version}</version>
+      <scope>test</scope>
+  </dependency>
 
 2. web.xml에 ContextListener 와 DistpatcherServlet Declare
     <context-param>

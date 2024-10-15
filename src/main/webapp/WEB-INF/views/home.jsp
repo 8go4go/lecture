@@ -11,6 +11,18 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Welcome to my house</h1>
+    <h1>Home</h1>
+    <table>
+        <tr>
+            <td>로그인을 원하시면 버튼을 누르세용 <br/>
+                <button onclick="window.location = '/member/login'">로그인</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="/member/signup">회원가입</a>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
